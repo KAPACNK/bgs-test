@@ -21,8 +21,7 @@ class UsersTable extends Migration
 
 
         Schema::create('user', function ($table) {
-            // $table->integer('id')->primary();
-            $table->id(); //может не работать 
+            $table->id();
             $table->string('email')->unique();
             $table->string('first_name');
             $table->string('last_name');
@@ -31,8 +30,7 @@ class UsersTable extends Migration
 
 
         Schema::create('event', function ($table) {
-            // $table->integer('id')->primary();
-            $table->id(); //может не работать
+            $table->id();
             $table->string('name');
             $table->integer('date');
             $table->string('city');

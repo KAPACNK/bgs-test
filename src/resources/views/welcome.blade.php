@@ -88,25 +88,9 @@ use App\User;
 
             <div class="content">
                 <div class="title m-b-md">
-                    
+                        Laravel
                 </div>
 
-                
-                <?php 
-
-                    $even_user = EventUser::where('user_id', 1)->where('event_id', 1)->first();
-                    var_dump($even_user);
-                    die();
-                    $events = Event::all();
-                    // var_dump($users);
-                    var_dump(count($events));
-                    die();
-                    foreach($events as $event){
-                        var_dump($event->email);
-                        die();
-                    }
-                
-                ?>
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
